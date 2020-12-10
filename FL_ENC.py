@@ -77,7 +77,7 @@ def create_model():
     model.add(Flatten(input_shape=(28, 28)))
     model.add(Dense(10, activation=tf.nn.softmax))
 
-    model.compile(optimizer=keras.optimizers.SGD(lr=0.215),
+    model.compile(optimizer=keras.optimizers.SGD(lr=0.01),
                   loss='sparse_categorical_crossentropy',
                   metrics=['sparse_categorical_accuracy'])
 
